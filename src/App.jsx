@@ -5,7 +5,14 @@ function App() {
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
-        <p className="header">Vite React Starter 💯</p>
+        <p
+          onClick={() => {
+            throw new Error('test');
+          }}
+          className="header"
+        >
+          Vite React Starter 💯
+        </p>
         <p>
           Vite + React <br />
           ESLint + Prettier + Stylelint
