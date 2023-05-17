@@ -18,12 +18,17 @@ export default defineConfig(({ command, mode }) => {
       }),
       // Put the Sentry vite plugin after all other plugins
       sentryVitePlugin({
-        org: 'openai-remix',
+        // org: 'openai-remix',
+        // project: 'javascript-react',
+
         project: 'javascript-react',
+        org: 'sentry',
+        url: 'https://scefali.ngrok.io/',
 
         // Auth tokens can be obtained from https://sentry.io/settings/account/api/auth-tokens/
         // and need `project:releases` and `org:read` scopes
         authToken: env.SENTRY_AUTH_TOKEN,
+
 
         sourcemaps: {
           // Specify the directory containing build artifacts
