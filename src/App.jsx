@@ -7,7 +7,7 @@ function App() {
         <img src={logo} className="app-logo" alt="logo" />
         <p
           onClick={() => {
-            throw new Error('test');
+            throw new Error('no sourcemaps');
           }}
           className="header"
         >
